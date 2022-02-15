@@ -1,0 +1,4 @@
+khandytool==0.2.3
+behave==1.2.6
+behave2cucumber==1.0.3
+allure-behave==2.9.45
