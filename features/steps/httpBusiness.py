@@ -8,11 +8,11 @@ load_dotenv(verbose=True)
 import os
 
 
-@Given("获取环境中主机地址")
+@Given("获取主机地址")
 def setp_impl(context):
     context.host=os.getenv("key")
 
-@Given("获取环境中主机端口")
+@Given("获取主机端口")
 def setp_impl(context):
     context.port=os.getenv("port")
 
@@ -53,7 +53,7 @@ def step_impl(context,regx_pattern,param_name):
 @When("获取前一次的返回值{param_name}")
 def step_impl(context,param_name):
     context.session.getExportParam(param_name)
-    
+
 
 # @When("处理特定值{param_name}")
 # def step_impl(context,param_name):
